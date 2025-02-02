@@ -1,3 +1,7 @@
+
+/**
+ * Clase CCuenta implementa atributos y metodos para representar un objeto de tipo cuenta.   
+ */
 public class CCuenta {
 
     private String nombre;
