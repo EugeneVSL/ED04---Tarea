@@ -9,6 +9,7 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    // default constructor
     public CCuenta() {
     }
 
@@ -52,10 +53,17 @@ public class CCuenta {
         this.tipoInterés = tipoInterés;
     }
 
-    public void ingresar(double cantidad) throws Exception
-    {
-        if (cantidad<0)
+    /**
+     * Implementa la operation de ingresar la cuenta 
+     * @param cantidad      Es la candidad de ingresar
+     * @throws Exception    Si se entuentra en error, se pasa la los niveles superiores
+     */
+    public void ingresar(double cantidad) throws Exception {
+
+        if (cantidad < 0) {
             throw new Exception("No se puede ingresar una cantidad negativa");
+        }
+
         saldo = saldo + cantidad;
     }
 
